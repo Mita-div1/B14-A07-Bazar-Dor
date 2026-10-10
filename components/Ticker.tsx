@@ -1,4 +1,4 @@
-import { allProducts } from "@/lib/products";
+import { getAllProducts } from "@/lib/products";
 import { trendOf } from "@/lib/product-utils";
 import { formatBnNumber, formatPercent } from "@/lib/bn";
 import type { Product } from "@/lib/types";
@@ -26,7 +26,8 @@ function TickerItem({ p, copy = false }: { p: Product; copy?: boolean }) {
 }
 
 /** Infinite scrolling price strip: the list is rendered twice and slid by -50%. */
-export default function Ticker() {
+export default async function Ticker() {
+  const allProducts = await getAllProducts();
   return (
     <div className="ticker overflow-hidden border-t border-base-300 bg-base-100" aria-label="আজকের দামের তালিকা">
       <ul className="ticker-track">
