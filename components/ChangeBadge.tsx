@@ -1,5 +1,5 @@
 import { formatPercent } from "@/lib/bn";
-import { trendOf } from "@/lib/products";
+import { trendOf } from "@/lib/product-utils";
 
 /**
  * ▲ ২.১%  (price went up   — red, as in the Figma: higher prices are bad news)

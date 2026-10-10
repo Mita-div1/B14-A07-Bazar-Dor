@@ -1,4 +1,5 @@
-import { allProducts, trendOf } from "@/lib/products";
+import { allProducts } from "@/lib/products";
+import { trendOf } from "@/lib/product-utils";
 import { formatBnNumber, formatPercent } from "@/lib/bn";
 import type { Product } from "@/lib/types";
 
