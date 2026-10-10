@@ -85,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
           <p className="text-sm text-base-content/60">আজকের দাম</p>
           <p className="text-4xl font-bold">{formatBnNumber(product.price)}</p>
           <p className="text-sm text-base-content/60">টাকা / {product.unit}</p>
-          <ChangeBadge change={product.change} className="mt-2 !bg-transparent" />
+          <ChangeBadge change={product.change} className="mt-2 bg-transparent!" />
         </div>
       </section>
 
