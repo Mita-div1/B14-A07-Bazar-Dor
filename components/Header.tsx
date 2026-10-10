@@ -12,7 +12,9 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3" aria-label="বাজার দর — হোম">
           {/* Logo icon: public/logo-icon.png (from the assignment files) */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-xl object-cover" />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary">
+            <img src="/logo-icon.png" alt="" width={20} height={20} className="h-5 w-5 brightness-0 invert" />
+          </span>
           <span className="leading-tight">
             <span className="block text-lg font-bold">বাজার দর</span>
             <BanglaDate className="block text-xs text-base-content/70" />

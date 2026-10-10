@@ -32,7 +32,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-bn), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-bn), "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {

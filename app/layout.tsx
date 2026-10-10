@@ -24,6 +24,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="bn" data-theme="light" className={hindSiliguri.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Colour-emoji fallback: newer emoji (🫘 🫙 🫚) are blank boxes on Windows 10 without it */}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" />
+      </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <Providers>
           <Header />
