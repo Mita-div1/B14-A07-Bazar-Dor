@@ -23,11 +23,11 @@ export default function Hero() {
 
         {/* Banner image */}
         <img
-          src="/hero-basket.svg"
+          src="/bazar-hero.png"
           alt="সবজির ঝুড়ির ছবি"
-          width={360}
-          height={300}
-          className="mx-auto w-48 shrink-0 sm:w-60 md:mx-0 md:mr-6 md:w-72"
+          width={600}
+          height={500}
+          className="mx-auto h-auto w-48 shrink-0 sm:w-60 md:mx-0 md:mr-6 md:w-72"
         />
       </div>
     </section>

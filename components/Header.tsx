@@ -10,9 +10,9 @@ export default function Header() {
       {/* Row 1 — logo + date, auth on the right */}
       <div className="mx-auto flex h-[68px] max-w-6xl items-center justify-between gap-3 px-4">
         <Link href="/" className="flex items-center gap-3" aria-label="বাজার দর — হোম">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary text-xl">
-            <span aria-hidden>🛒</span>
-          </span>
+          {/* Logo icon: public/logo-icon.png (from the assignment files) */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-icon.png" alt="" width={40} height={40} className="h-10 w-10 shrink-0 rounded-xl object-cover" />
           <span className="leading-tight">
             <span className="block text-lg font-bold">বাজার দর</span>
             <BanglaDate className="block text-xs text-base-content/70" />

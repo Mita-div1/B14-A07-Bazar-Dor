@@ -34,6 +34,7 @@ BazarDor is a Bangla-first web app that shows today's market prices of everyday 
 ## 🗂️ Project structure
 
 ```
+public/              put bazar-hero.png and logo-icon.png here
 app/                 routes: / · /category/[slug] · /product/[slug] · /signin · /signup · /profile · /profile/update
   api/auth/[...all]  BetterAuth handler
   api/products       JSON API used by the Home and Category pages
